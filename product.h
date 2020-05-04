@@ -8,6 +8,7 @@ typedef struct{
 	int star; //화장품 별점
 	int color; //화장품 색깔
 	int pcolor; //퍼스널컬러  
+	int color; //제품의 컬러
 	int event; //이벤트중인 화장품  
 } Product;
 
