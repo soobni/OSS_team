@@ -9,7 +9,7 @@ int updateProduct(Product *p){
 	scanf("%d",p->price);
 	printf("제품의 별점은? ");
 	scanf("%d", p->star);
-	printf("제품의 personal color는? :(1: 봄웜 2: 여름쿨 3: 가을웜 4: 겨울쿨) ");
+	printf("제품의 personal color는? :(0: 공통 1: 봄웜 2: 여름쿨 3: 가을웜 4: 겨울쿨) ");
 	scanf("%d",p->pcolor);
 	printf("제품의 색상은? ");
 	//대표적인 색 몇가지 리스트 보여주고 선택하게 하는 함수 구현하기	
@@ -31,7 +31,7 @@ int createProduct(Product *p){
 	scanf("%d",p->price);
 	printf("제품의 별점은? ");
 	scanf("%d", p->star);
-	printf("제품의 personal color는? :(1: 봄웜 2: 여름쿨 3: 가을웜 4: 겨울쿨) ");
+	printf("제품의 personal color는? :(0: 공통 1: 봄웜 2: 여름쿨 3: 가을웜 4: 겨울쿨) ");
 	scanf("%d",p->pcolor);
 	printf("제품의 색상은? ");
 	// 색은 string으로 받을까? 아님 숫자로 받을까? 숫자로 받으면 색의 종류는 어떤식으로 나눌까?	
