@@ -42,3 +42,12 @@ int createProduct(Product *p){
 	return 1;
 }
 
+void readProduct(Product p){
+	//제품이름 제품무게 제품가격 제품별점 personalcolor 제품색상 이벤트유무
+	printf("%s %d %d %d %d %d %d\n", p.name, p.weight, p.price, p.star, p.pcolor, p.color, p.event);
+	 //제품의 색상을 숫자라고 해놓음
+}
+
+int deleteProduct(Product *p){
+	
+}
