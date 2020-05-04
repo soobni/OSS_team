@@ -49,5 +49,13 @@ void readProduct(Product p){
 }
 
 int deleteProduct(Product *p){
+	p->weight = -1;
+	p->price = -1;
+	p->star = -1;
+	p->pcolor = -1;
+	p->color = -1;
+	p->event = -1;
+	printf("=> 삭제됨!\n");
 	
+	return 1;
 }
