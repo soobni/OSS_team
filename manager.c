@@ -49,4 +49,20 @@ void eventProduct(Product *p,int count){
 	}
 }
 
+int loadProduct (Product *p){
+	int n=0;
+   	FILE * fp;
+   	fp = fopen("product.txt","rt");
+    	if(fp == NULL){
+        printf("=> 파일 없음\n");
+        return 0;
+    }
+    for(; ; n++){
+        fscanf(fp,"%s %d %d %d %d %d %d\n", p.name, &p.weight, &p.price, &p.star, &p.pcolor, &p.color, &p.event);
+        if(feof(fp))break;
+    }
+    fclose(fp);
+    printf("=> 로딩 성공!\n");
+    return n;
 
+}
