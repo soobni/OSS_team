@@ -66,3 +66,13 @@ int loadProduct (Product *p){
     return n;
 
 }
+
+int selectColor(Product *p,int colorNo){
+	int color;
+	for(int i=0;i<colorNo;i++){
+	printf("%2d %s",i+1,p[i]->fcolor);
+	}	
+	printf("번호는? ");
+    	scanf("%d",&color);
+	return color-1;
+}
