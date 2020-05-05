@@ -9,7 +9,7 @@ int selectDataNo(Product *p, int count){
     return no;
 }
 
-void eventPoduct(Product *p,int count){
+void eventProduct(Product *p,int count){
 
 	for (int i=0;i<count;i++){
 		if(p[i].event==1){
