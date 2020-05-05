@@ -76,3 +76,22 @@ int selectColor(Product *p,int colorNo){
     	scanf("%d",&color);
 	return color-1;
 }
+int loadColor(Product*p){
+	int n=0;
+	FILE * fp ;
+	fp = fopen ("color.txt","rt");
+	if(fp ==NULL){
+	printf("=> no Data\n");
+	return 0;
+	}
+	for(; ;n++){
+	fscanf(fp,"%s\n", p.fcolor); 
+	if(feof(fp))break;
+
+}
+	fclose(fp);
+	printf("=> 색 로딩 성공!\n");
+	return n;
+}
+
+
