@@ -1,5 +1,6 @@
 product
-color.txt
+*.txt
+
 # README
 README.md
 
