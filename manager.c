@@ -15,6 +15,20 @@ int selectMenu(){
 	return menu;
 }
 
+void listProduct(Product *p,int count){
+	printf("\nNo Name Weight Price point PersonalColor ProductColor eventO/X\n"); 
+	printf("=================================\n"); 
+	//제품이름 제품무게 제품가격 제품별점 personalcolor 제품색상 이벤트유무
+	printf("%s %d %d %d %d %d %d\n", p.name, p.weight, p.price, p.star, p.pcolor, p.color, p.event);
+	for(int i = 0; i < count; i++){ 
+		if(p[i].weight == -1) continue;
+		printf("%2d ", i+1); 
+		readProduct(p[i]); 
+	}
+	 printf("\n"); 
+}
+	
+
 int selectDataNo(Product *p, int count){
     int no=0;
     listScore(p,count);
