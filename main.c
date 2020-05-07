@@ -5,7 +5,7 @@ int main(void){
     Product slist[100];
     int curcount=0;
     int count = 0, menu;
-    
+    int ccount =0; // color count    
     count = loadData(slist);
     curcount=count; 
 
