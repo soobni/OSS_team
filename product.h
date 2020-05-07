@@ -10,7 +10,7 @@ typedef struct{
 	int pcolor; //퍼스널컬러  
 	int event; //이벤트중인 화장품  
 	char fcolor[100] // color파일에 있는 색
-} Product;
+}Product;
 
 int createProduct(Product *p); //제품을 추가하는 함수
 void readProduct(Product p); //하나의 제품을 출력하는 함수
