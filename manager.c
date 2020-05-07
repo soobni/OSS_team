@@ -43,7 +43,7 @@ void saveData(Product *p, int count){
 	
 	for(int i = 0; i < count; i++){ 
 		if(p[i].weight == -1) continue; 
-		fprintf(fp, "%d %d %d %d %d %d %s\n", p[i].weight, p[i].price, p[i].star, p[i].pcolor, p[i].color, p[i].event, p[i].name); 
+		fprintf(fp, "%d %d %d %d %d %s %s\n", p[i].weight, p[i].price, p[i].star, p[i].pcolor, p[i].event, p[i].color, p[i].name); 
 		}fclose(fp); 
 	printf("저장됨!\n"); 
 }
