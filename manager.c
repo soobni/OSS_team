@@ -78,6 +78,26 @@ int loadData(Product *p){
 
 }
 
+void searchName(Product *p, int count){
+	int scount = 0; 
+	char search[20];
+	
+	printf("검색할 이름은?\n"); 
+	scanf("%s", search); 
+	printf("\nNo Name\tKor Eng Math Sum Avg\n"); 
+	printf("=================================\n"); 
+	
+	for(int i = 0; i < count; i++){ 
+		if(p[i].weight == -1) continue; 
+		if(strstr(p[i].name, search)){ 
+			printf("%2d ", i+1); 
+			readScore(p[i]); scount++; 
+		} 
+	} 
+	if(scount == 0) printf("=> 검색된 데이터 없음!");
+	 printf("\n");
+}
+
 int selectColor(Product *p,int colorNo){
 	int color;
 	for(int i=0;i<colorNo;i++){
