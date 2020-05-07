@@ -1,6 +1,7 @@
 product
 *.txt
 Makefile
+market
 
 # README
 README.md
