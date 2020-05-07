@@ -69,7 +69,7 @@ int loadData(Product *p){
         return 0;
     }
     for(; ; n++){
-        fscanf(fp,"%s %d %d %d %d %d %d\n", p.name, &p.weight, &p.price, &p.star, &p.pcolor, &p.color, &p.event);
+        fscanf(fp,"%d %d %d %d %d %d %s\n",&p.weight, &p.price, &p.star, &p.pcolor, &p.color, &p.event, p.name);
         if(feof(fp))break;
     }
     fclose(fp);
