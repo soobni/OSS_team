@@ -97,7 +97,7 @@ int loadColor(Product*p){
 	return 0;
 	}
 	for(; ;n++){
-	fscanf(fp,"%s\n", p.fcolor); 
+	fscanf(fp,"%s\n", p[i].fcolor); 
 	if(feof(fp))break;
 
 }
