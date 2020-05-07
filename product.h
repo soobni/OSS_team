@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-typedef struct{
+typedef struct Product{
 	char name[100]; //화장품 이름
 	int weight; //화장품 무게
 	int price; //화장품 가격
