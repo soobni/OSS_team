@@ -146,6 +146,4 @@ int loadColor(Product*p){
 	return n;
 }
 
-void PersonalColor(Product *p){
 	
-}
