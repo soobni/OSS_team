@@ -12,7 +12,11 @@ int updateProduct(Product *p){
 	printf("제품의 personal color는? :(0: 공통 1: 봄웜 2: 여름쿨 3: 가을웜 4: 겨울쿨) ");
 	scanf("%d",&p->pcolor);
 	printf("제품의 색상은? ");
-	//대표적인 색 몇가지 리스트 보여주고 선택하게 하는 함수 구현하기	
+	for (int i=0 ;i<ccount;i++){
+        printf("%2d %s\n",i+1,p[i].fcolor);
+    	}
+    	scanf("%d",&n);
+    	p->color = n-1;
 	printf("이벤트 유무? Y:1 N:2 ");
 	scanf("%d",&p->event);
     	
@@ -21,8 +25,8 @@ int updateProduct(Product *p){
 	return 1;
 
 } 
-int createProduct(Product *p){
-
+int createProduct(Product *p,int ccount){
+	int n;
 	printf("제품의 이름은? ");
 	scanf("%[^\n]s",p->name);
 	printf("제품의 무게는? ");
@@ -34,7 +38,12 @@ int createProduct(Product *p){
 	printf("제품의 personal color는? :(0: 공통 1: 봄웜 2: 여름쿨 3: 가을웜 4: 겨울쿨) ");
 	scanf("%d",&p->pcolor);
 	printf("제품의 색상은? ");
-	// 색은 string으로 받을까? 아님 숫자로 받을까? 숫자로 받으면 색의 종류는 어떤식으로 나눌까?	
+	for (int i=0 ;i<ccount;i++){
+        printf("%2d %s\n",i+1,p[i].fcolor);
+   	 }
+   	scanf("%d",&n);
+    	p->color = n-1;
+
 	printf("이벤트 유무? Y:1 N:2 ");
 	scanf("%d",&p->event);
 
