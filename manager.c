@@ -31,10 +31,21 @@ void listProduct(Product *p,int count){
 
 int selectDataNo(Product *p, int count){
     int no=0;
-    listScore(p,count);
+    listScord(p,count);
     printf("번호는? ");
     scanf("%d",&no);
     return no;
+}
+
+void saveData(Product *p, int count){
+	FILE *fp; 
+	fp = fopen("product.txt", "wt"); 
+	
+	for(int i = 0; i < count; i++){ 
+		if(p[i].weight == -1) continue; 
+		fprintf(fp, "%d %d %d %d %d %d %s\n", p.weight, p.price, p.star, p.pcolor, p.color, p.event, p.name); 
+		}fclose(fp); 
+	printf("저장됨!\n"); 
 }
 
 void eventProduct(Product *p,int count){
@@ -49,7 +60,7 @@ void eventProduct(Product *p,int count){
 	}
 }
 
-int loadProduct (Product *p){
+int loadData(Product *p){
 	int n=0;
    	FILE * fp;
    	fp = fopen("product.txt","rt");
@@ -76,6 +87,7 @@ int selectColor(Product *p,int colorNo){
     	scanf("%d",&color);
 	return color-1;
 }
+
 int loadColor(Product*p){
 	int n=0;
 	FILE * fp ;
