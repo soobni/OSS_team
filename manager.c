@@ -68,7 +68,7 @@ int loadData(Product *p){
         return 0;
     }
     for(; ; n++){
-        fscanf(fp,"%d %d %d %d %d %s %s\n",&p[n].weight, &p[n].price, &p[n].star, &p[n].pcolor, &p[n].event, p[n].color, p[n].name);
+        fscanf(fp,"%d %d %d %d %d %d %s\n",&p[n].weight, &p[n].price, &p[n].star, &p[n].pcolor, &p[n].event, &p[n].color, p[n].name);
 
         if(feof(fp))break;
     }
@@ -108,24 +108,6 @@ int selectColor(Product *p,int colorNo){
 	return color-1;
 }
 
-int searchColor(Product *p, int count){
-	int scount = 0;
-	char search[20];
-	
-	printf("검색할 컬러는?"\n);
-	scanf("%s", search);
-	printf("\nNo Name Weight Price point PersonalColor ProductColor eventO/X\n"); 
-	printf("=================================\n"); 
-		for(int i = 0; i < count; i++){ 
-		if(p[i].weight == -1) continue; 
-		if(strstr(p[i].color, search)){ 
-			printf("%2d ", i+1); 
-			readProduct(p[i]); scount++;
-		}
-		} 
-		if(scount == 0) printf("=> 검색된 데이터 없음!"); 
-		printf("\n");
-}
 
 
 int loadColor(Product*p){
