@@ -31,7 +31,7 @@ void listProduct(Product *p,int count){
 
 int selectDataNo(Product *p, int count){
     int no=0;
-    listScore(p,count);
+    listScord(p,count);
     printf("번호는? ");
     scanf("%d",&no);
     return no;
@@ -49,7 +49,7 @@ void eventProduct(Product *p,int count){
 	}
 }
 
-int loadProduct (Product *p){
+int loadData(Product *p){
 	int n=0;
    	FILE * fp;
    	fp = fopen("product.txt","rt");
