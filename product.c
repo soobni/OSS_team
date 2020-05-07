@@ -1,6 +1,7 @@
 #include "product.h"
 
 int updateProduct(Product *p){
+	int n;
 	printf("제품명은? ");
    	scanf("%[^\n]s",p->name);
 	printf("제품의 무게는? ");

@@ -8,6 +8,7 @@ int main(void){
     int ccount =0; // color count    
     count = loadData(slist);
     curcount=count; 
+    ccount = loadColor(slist);
 
     while (1){
         menu = selectMenu();
