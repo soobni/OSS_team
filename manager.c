@@ -31,7 +31,7 @@ void listProduct(Product *p,int count){
 
 int selectDataNo(Product *p, int count){
     int no=0;
-    listScord(p,count);
+    listProduct(p,count);
     printf("번호는? ");
     scanf("%d",&no);
     return no;
@@ -43,7 +43,7 @@ void saveData(Product *p, int count){
 	
 	for(int i = 0; i < count; i++){ 
 		if(p[i].weight == -1) continue; 
-		fprintf(fp, "%d %d %d %d %d %s %s\n", p.weight, p.price, p.star, p.pcolor, p.event, p.color, p.name); 
+		fprintf(fp, "%d %d %d %d %d %d %s\n", p[i].weight, p[i].price, p[i].star, p[i].pcolor, p[i].color, p[i].event, p[i].name); 
 		}fclose(fp); 
 	printf("저장됨!\n"); 
 }
@@ -69,7 +69,8 @@ int loadData(Product *p){
         return 0;
     }
     for(; ; n++){
-        fscanf(fp,"%d %d %d %d %d %s %s\n",&p.weight, &p.price, &p.star, &p.pcolor, &p.event, p.color, p.name);
+        fscanf(fp,"%d %d %d %d %d %s %s\n",&p[n].weight, &p[n].price, &p[n].star, &p[n].pcolor, &p[n].event, p[n].color, p[n].name);
+
         if(feof(fp))break;
     }
     fclose(fp);
@@ -101,7 +102,7 @@ void searchName(Product *p, int count){
 int selectColor(Product *p,int colorNo){
 	int color;
 	for(int i=0;i<colorNo;i++){
-	printf("%2d %s",i+1,p[i]->fcolor);
+	printf("%2d %s",i+1,p[i].fcolor);
 	}	
 	printf("번호는? ");
     	scanf("%d",&color);
@@ -137,7 +138,7 @@ int loadColor(Product*p){
 	return 0;
 	}
 	for(; ;n++){
-	fscanf(fp,"%s\n", p[i].fcolor); 
+	fscanf(fp,"%s\n", p[n].fcolor); 
 	if(feof(fp))break;
 
 }
