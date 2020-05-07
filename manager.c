@@ -106,4 +106,16 @@ int loadColor(Product*p){
 	return n;
 }
 
+void eventPoduct(Product *p,int count){
+
+	for(int i = 0; i < count; i++){
+                if(p[i].weight == -1) continue;
+		if(p[i].event ==1){
+                	printf("%2d ", i+1);
+                	readProduct(p[i]);
+		}
+        }
+         printf("\n");
+
+}
 
