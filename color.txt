@@ -15,8 +15,3 @@ lemonYellow
 icyViolet	    
 black		    
 charcoalGray	    
-
-
-
-
-

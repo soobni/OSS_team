@@ -119,8 +119,8 @@ int loadColor(Product*p){
 	return 0;
 	}
 	for(; ;n++){
-	fscanf(fp,"%s\n", p[n].fcolor); 
 	if(feof(fp))break;
+	fscanf(fp,"%s\n", p[n].fcolor); 
 
 }
 	fclose(fp);
@@ -128,6 +128,3 @@ int loadColor(Product*p){
 	return n;
 }
 
-void PersonalColor(Product *p){
-	
-}
