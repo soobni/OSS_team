@@ -14,7 +14,7 @@ int updateProduct(Product *p,int ccount){
 	scanf("%d",&p->pcolor);
 	printf("제품의 색상은? ");
 	for (int i=0 ;i<ccount;i++){
-        printf("%2d %s\n",i+1,p[i].fcolor);
+        printf("%2d %s",i+1,p[i].fcolor);
     	}
     	scanf("%d",&n);
     	p->color = n-1;
@@ -39,8 +39,8 @@ int createProduct(Product *p,int ccount){
 	printf("제품의 personal color는? :(0: 공통 1: 봄웜 2: 여름쿨 3: 가을웜 4: 겨울쿨) ");
 	scanf("%d",&p->pcolor);
 	printf("제품의 색상은? ");
-	for (int i=0 ;i<ccount;i++){
-        printf("%2d %s\n",i+1,p[i].fcolor);
+	for (int i=0 ;i<ccount-1;i++){
+        printf("%2d %s",i+1,p[i].fcolor);
    	 }
    	scanf("%d",&n);
     	p->color = n-1;
