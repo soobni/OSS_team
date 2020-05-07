@@ -9,7 +9,7 @@ typedef struct{
 	int color; //화장품 색깔
 	int pcolor; //퍼스널컬러  
 	int event; //이벤트중인 화장품  
-	char fcolor // color파일에 있는 색
+	char fcolor[100] // color파일에 있는 색
 } Product;
 
 int createProduct(Product *p); //제품을 추가하는 함수
