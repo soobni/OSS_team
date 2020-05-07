@@ -31,7 +31,7 @@ void listProduct(Product *p,int count){
 
 int selectDataNo(Product *p, int count){
     int no=0;
-    listScord(p,count);
+    listProduct(p,count);
     printf("번호는? ");
     scanf("%d",&no);
     return no;
@@ -81,7 +81,7 @@ int loadData(Product *p){
 int selectColor(Product *p,int colorNo){
 	int color;
 	for(int i=0;i<colorNo;i++){
-	printf("%2d %s",i+1,p[i]->fcolor);
+	printf("%2d %s",i+1,p[i].fcolor);
 	}	
 	printf("번호는? ");
     	scanf("%d",&color);
@@ -97,7 +97,7 @@ int loadColor(Product*p){
 	return 0;
 	}
 	for(; ;n++){
-	fscanf(fp,"%s\n", p[i].fcolor); 
+	fscanf(fp,"%s\n", p[n].fcolor); 
 	if(feof(fp))break;
 
 }
