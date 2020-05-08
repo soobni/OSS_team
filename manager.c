@@ -16,7 +16,7 @@ int selectMenu(){
 }
 
 void listProduct(Product *p,int count){
-	printf("\nNo Name Weight Price point PersonalColor ProductColor event1/2\n"); 
+	printf("\nNo Name     Weight Price point PersonalColor ProductColor event1/2\n"); 
 	printf("=================================\n"); 
 	//제품이름 제품무게 제품가격 제품별점 personalcolor 제품색상 이벤트유무
 	for(int i = 0; i < count; i++){ 
