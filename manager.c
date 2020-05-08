@@ -67,15 +67,17 @@ int loadData(Product *p){
         printf("=> 파일 없음\n");
         return 0;
     }
-    for(; ; n++){
-        fscanf(fp,"%d %d %d %d %d %d %s\n",&p[n].weight, &p[n].price, &p[n].star, &p[n].pcolor, &p[n].event, &p[n].color, p[n].name);
-
-        if(feof(fp))break;
+	else{
+ 	   while(!feof(fp)){
+       		 fscanf(fp,"%d %d %d %d %d %d %s\n",&p[n].weight, &p[n].price, &p[n].star, &p[n].pcolor, &p[n].event, &p[n].color, p[n].name);
+	n++;
     }
-    fclose(fp);
+
+    
     printf("=> 로딩 성공!\n");
     return n;
-
+}
+fclose(fp);
 }
 
 void searchName(Product *p, int count){
