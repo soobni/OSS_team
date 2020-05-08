@@ -5,9 +5,10 @@ int main(void){
     Product slist[100];
     int curcount=0;
     int count = 0, menu;
-    
+    int ccount =0; // color count    
     count = loadData(slist);
     curcount=count; 
+    ccount = loadColor(slist);
 
     while (1){
         menu = selectMenu();
@@ -22,7 +23,7 @@ int main(void){
 
         if(menu == 1) listProduct(slist,curcount); 
         else if (menu == 2) {
-            count+=createProduct(&slist[curcount++]); 
+            count+=createProduct(&slist[curcount++],ccount); 
         }
         else if (menu == 3) {
             int no=selectDataNo(slist, curcount);
@@ -30,7 +31,7 @@ int main(void){
                 printf("=>취소됨!");
                 continue;
             }
-            updateProduct(&slist[no-1]);
+            updateProduct(&slist[no-1],ccount);
         }
         else if (menu == 4) {
             int no=selectDataNo(slist, curcount);

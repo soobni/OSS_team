@@ -1,22 +1,17 @@
-ivory	   	    (spring warm)
-coral pink	    (spring warm)
-warm pastel pink    (spring warm)
-peach	   	    (spring warm)
-pastel aqua	    (summer cool)
-lavendar	    (summer cool)
-burgundy	    (summer cool)
-sky blue	    (summer cool)
-orange		    (autumn warm)
-gold		    (autumn warm)
-warm beige	    (autumn warm)
-lime green	    (autumn warm)
-navy blue	    (winter cool)
-lemon yellow	    (winter cool)
-icy violet	    (winter cool)
-black		    (winter cool)
-charcoal gray	    (winter cool)
-
-
-
-
-
+ivory	   	    
+coralPink	   
+warmPastelPink    
+peach	   	    
+pastelAqua	    
+lavendar	    
+burgundy	    
+skyBlue	    
+orange		    
+gold		    
+warmBeige	    
+limeGreen	    
+navyBlue	    
+lemonYellow	    
+icyViolet	    
+black		    
+charcoalGray	    

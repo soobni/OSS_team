@@ -19,7 +19,6 @@ void listProduct(Product *p,int count){
 	printf("\nNo Name Weight Price point PersonalColor ProductColor event1/2\n"); 
 	printf("=================================\n"); 
 	//제품이름 제품무게 제품가격 제품별점 personalcolor 제품색상 이벤트유무
-	printf("%s %d %d %d %d %s %d\n", p.name, p.weight, p.price, p.star, p.pcolor, p.color, p.event);
 	for(int i = 0; i < count; i++){ 
 		if(p[i].weight == -1) continue;
 		printf("%2d ", i+1); 
@@ -43,7 +42,7 @@ void saveData(Product *p, int count){
 	
 	for(int i = 0; i < count; i++){ 
 		if(p[i].weight == -1) continue; 
-		fprintf(fp, "%d %d %d %d %d %s %s\n", p[i].weight, p[i].price, p[i].star, p[i].pcolor, p[i].event, p[i].color, p[i].name); 
+		fprintf(fp, "%d %d %d %d %d %d %s\n", p[i].weight, p[i].price, p[i].star, p[i].pcolor, p[i].color, p[i].event, p[i].name); 
 		}fclose(fp); 
 	printf("저장됨!\n"); 
 }
@@ -69,7 +68,7 @@ int loadData(Product *p){
         return 0;
     }
     for(; ; n++){
-        fscanf(fp,"%d %d %d %d %d %s %s\n",&p[n].weight, &p[n].price, &p[n].star, &p[n].pcolor, &p[n].event, p[n].color, p[n].name);
+        fscanf(fp,"%d %d %d %d %d %d %s\n",&p[n].weight, &p[n].price, &p[n].star, &p[n].pcolor, &p[n].event, &p[n].color, p[n].name);
 
         if(feof(fp))break;
     }
@@ -109,24 +108,6 @@ int selectColor(Product *p,int colorNo){
 	return color-1;
 }
 
-int searchColor(Product *p, int count){
-	int scount = 0;
-	char search[20];
-	
-	printf("검색할 컬러는?"\n);
-	scanf("%s", search);
-	printf("\nNo Name Weight Price point PersonalColor ProductColor eventO/X\n"); 
-	printf("=================================\n"); 
-		for(int i = 0; i < count; i++){ 
-		if(p[i].weight == -1) continue; 
-		if(strstr(p[i].color, search)){ 
-			printf("%2d ", i+1); 
-			readProduct(p[i]); scount++;
-		}
-		} 
-		if(scount == 0) printf("=> 검색된 데이터 없음!"); 
-		printf("\n");
-}
 
 
 int loadColor(Product*p){
@@ -138,8 +119,8 @@ int loadColor(Product*p){
 	return 0;
 	}
 	for(; ;n++){
-	fscanf(fp,"%s\n", p[n].fcolor); 
 	if(feof(fp))break;
+	fscanf(fp,"%s\n", p[n].fcolor); 
 
 }
 	fclose(fp);
@@ -147,4 +128,3 @@ int loadColor(Product*p){
 	return n;
 }
 
-	
