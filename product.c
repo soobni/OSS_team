@@ -43,7 +43,7 @@ int createProduct(Product *p,int ccount){
         printf("%2d %s",i+1,p[i].fcolor);
    	 }
    	scanf("%d",&n);
-    	p->color = n-1;
+    	p->color = n;
 
 	printf("이벤트 유무? Y:1 N:2 ");
 	scanf("%d",&p->event);
