@@ -31,6 +31,7 @@ int main(void){
                 printf("=>취소됨!");
                 continue;
             }
+	    getchar();
             updateProduct(&slist[no-1],ccount);
         }
         else if (menu == 4) {
