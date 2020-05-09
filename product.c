@@ -2,7 +2,7 @@
 
 int updateProduct(Product *p,int ccount){
 	int n;
-	printf("제품명은? ");
+	printf("제품의 이름은? ");
    	scanf("%[^\n]s",p->name);
 	printf("제품의 무게는? ");
     	scanf("%d",&p->weight);
