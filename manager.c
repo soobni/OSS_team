@@ -112,7 +112,7 @@ int selectColor(Product *p,int colorNo){
 
 
 
-int loadColor(Product*p){
+int loadColor(Product *p){
 	int n=0;
 	FILE * fp ;
 	fp = fopen ("color.txt","rt");
