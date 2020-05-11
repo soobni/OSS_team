@@ -71,6 +71,34 @@ void searchColor(Product *p,int count){
 			printf("%2d coralPink:\n ", i+1);
 			readProduct(p[i]);
 		}
+		else if (p[i].color == 3) {
+			printf("%2d warmPastelPink:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 4) {
+			printf("%2d peach:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 5) {
+			printf("%2d pastelAqua:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 6) {
+			printf("%2d lavender:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 7) {
+			printf("%2d burgundy:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 8) {
+			printf("%2d skyblue:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 9) {
+			printf("%2d orange:\n ", i+1);
+			readProduct(p[i]);
+		}
 		else continue;
 	}
 }
