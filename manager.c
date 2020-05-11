@@ -111,8 +111,6 @@ int selectColor(Product *p,int colorNo){
 	return color-1;
 }
 
-
-
 int loadColor(Product *p){
 	int n=0;
 	FILE * fp ;
