@@ -52,7 +52,7 @@ void eventProduct(Product *p,int count){
 
 	for (int i=0;i<count;i++){
 		if(p[i].event==1){
-			printf("%2d",i+1);
+			printf("%2d ",i+1);
 			readProduct(p[i]);		
 
 		}
@@ -61,7 +61,13 @@ void eventProduct(Product *p,int count){
 }
 
 void searchColor(Product *p,int count){
-
+	for (int i = 0; i < count; i++){
+		if(p[i].color == 1) {
+			printf("%2d ", i+1);
+			readProduct(p[i]);
+		}
+		else continue;
+	}
 }
 
 int loadData(Product *p){
