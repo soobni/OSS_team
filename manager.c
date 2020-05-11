@@ -115,6 +115,10 @@ void searchColor(Product *p,int count){
 			printf("%2d navyBlue:\n ", i+1);
 			readProduct(p[i]);
 		}
+		else if (p[i].color == 14) {
+			printf("%2d lemonYellow:\n ", i+1);
+			readProduct(p[i]);
+		}
 		else continue;
 	}
 }
