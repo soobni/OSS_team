@@ -48,19 +48,15 @@ int main(void){
             printf("정말로 삭제하시겠습니까?(삭제:1)");
             scanf("%d",&deleteok);
             if(deleteok == 1){
-                if(deleteProduct(&slist[no-1])) count--;       
+                if(deleteProduct(&slist[no-1])) count --;       
            	 } 
         }
-	else if (menu == 5){
-		if (count==0) printf("데이터가 없습니다!\n");
-		else saveData(slist,curcount);
+	    else if (menu == 5){
+		    if (count==0) printf("데이터가 없습니다!\n");
+		    else saveData(slist,curcount);
 	    }
-	
-	else if (menu == 6){
-		if(count ==0) printf("데이터가 없습니다!\n"); 
-		else searchName(slist, curcount); 
-	   }
 	}
+
 	printf("\n종료됨!\n");
    	return 0;
 }
