@@ -9,6 +9,7 @@ int selectMenu(){
 	printf("4. 삭제\n"); 
 	printf("5. 파일저장\n"); 
 	printf("6. 이름검색\n"); 
+	printf("7. 이벤트 제품 조회 \n");
 	printf("0. 종료\n\n"); 
 	printf("=> 원하는 메뉴는? "); 
 	scanf("%d", &menu); 
@@ -86,7 +87,7 @@ void searchName(Product *p, int count){
 	
 	printf("검색할 이름은?\n"); 
 	scanf("%s", search); 
-	printf("\nNo Name Weight Price point PersonalColor ProductColor event1/2\n"); 
+	printf("\nNo Name     Weight Price point PersonalColor ProductColor event1/2\n"); 
 	printf("=================================\n"); 
 	
 	for(int i = 0; i < count; i++){ 
@@ -112,7 +113,7 @@ int selectColor(Product *p,int colorNo){
 
 
 
-int loadColor(Product*p){
+int loadColor(Product *p){
 	int n=0;
 	FILE * fp ;
 	fp = fopen ("color.txt","rt");
