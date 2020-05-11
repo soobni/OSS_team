@@ -127,6 +127,10 @@ void searchColor(Product *p,int count){
 			printf("%2d black:\n ", i+1);
 			readProduct(p[i]);
 		}
+		else if (p[i].color == 17) {
+			printf("%2d charcoalGray:\n ", i+1);
+			readProduct(p[i]);
+		}
 		else continue;
 	}
 }
