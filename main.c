@@ -62,6 +62,10 @@ int main(void){
 	   else if (menu == 7) {
 		if(count == 0) printf("데이터가 없습니다!\n");
 		else eventProduct(slist, curcount);
+		}
+	  else if (menu == 8) {
+		if(count == 0) printf("데이터가 없습니다!\n");
+		else searchColor(slist, curcount);
 		} 
 	}
 	
