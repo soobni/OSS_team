@@ -56,7 +56,10 @@ int main(void){
 		    else saveData(slist,curcount);
 	    }
 	}
-
+	   else if (menu == 6){
+		   if(count ==0) printf("데이터가 없습니다!\n"); 
+		   else searchName(slist, curcount); 
+	   }
 	printf("\n종료됨!\n");
    	return 0;
 }
