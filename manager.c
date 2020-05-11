@@ -76,6 +76,10 @@ void PersonalColor(Product *p, int count){
 			printf("%2d 나의 Personal Color가  여름쿨이라면?\n",i+1);
 			readProduct(p[i]);
 		}	
+		if(p[i].pcolor==3){
+			printf("%2d 나의 Personal Color가  가을웜이라면?\n",i+1);
+			readProduct(p[i]);
+		}	
 			
 	}	
 }
