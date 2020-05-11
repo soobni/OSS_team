@@ -48,7 +48,7 @@ int main(void){
             printf("정말로 삭제하시겠습니까?(삭제:1)");
             scanf("%d",&deleteok);
             if(deleteok == 1){
-                if(deleteProduct(&slist[no-1])) count --;       
+                if(deleteProduct(&slist[no-1])) count--;       
            	 } 
         }
 	else if (menu == 5){
