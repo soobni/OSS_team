@@ -61,6 +61,14 @@ void eventProduct(Product *p,int count){
 	}
 }
 
+void PersonalColor(Product *p, int count){
+	for (int i=0;i<count;i++){
+		if(p[i].pcolor==0){
+			printf("%2d 공통\n",i+1);
+			readProduct(p[i]);		
+	}	
+}
+
 void searchColor(Product *p,int count){
 	for (int i = 0; i < count; i++){
 		if(p[i].color == 1) {
