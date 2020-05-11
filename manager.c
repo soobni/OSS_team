@@ -60,6 +60,10 @@ void eventProduct(Product *p,int count){
 	}
 }
 
+void searchColor(Product *p,int count){
+
+}
+
 int loadData(Product *p){
 	int n=0;
    	FILE * fp;
