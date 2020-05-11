@@ -99,6 +99,18 @@ void searchColor(Product *p,int count){
 			printf("%2d orange:\n ", i+1);
 			readProduct(p[i]);
 		}
+		else if (p[i].color == 10) {
+			printf("%2d gold:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 11) {
+			printf("%2d warmBeige:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 12) {
+			printf("%2d limeGreen:\n ", i+1);
+			readProduct(p[i]);
+		}
 		else continue;
 	}
 }
