@@ -66,6 +66,10 @@ int main(void){
 	  else if (menu == 8) {
 		if(count == 0) printf("데이터가 없습니다!\n");
 		else searchColor(slist, curcount);
+		}
+	  else if (menu == 9) {
+		if(count == 0) printf("데이터가 없습니다!\n");
+		else PersonalColor(slist, curcount);
 		} 
 	}
 	
