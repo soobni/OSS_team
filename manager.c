@@ -69,7 +69,7 @@ void PersonalColor(Product *p, int count){
 			readProduct(p[i]);
 		}	
 		if(p[i].pcolor==1){
-			printf("%2d \n",i+1);
+			printf("%2d 나의 Personal Color가  봄웜이라면?\n",i+1);
 			readProduct(p[i]);
 		}	
 			
