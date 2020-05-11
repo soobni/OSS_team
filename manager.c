@@ -63,8 +63,12 @@ void eventProduct(Product *p,int count){
 void searchColor(Product *p,int count){
 	for (int i = 0; i < count; i++){
 		if(p[i].color == 1) {
-			printf("%2d ", i+1);
+			printf("%2d ivory:\n ", i+1);
 			readProduct(p[i]);
+		} 
+		else if (p[i].color == 2) {
+			printff("%2d coralPink:\n ", i+1);
+			readProducy(p[i]);
 		}
 		else continue;
 	}
