@@ -1,4 +1,4 @@
-#include "manager.h"
+include "manager.h"
 
 int main(void){
     
@@ -31,10 +31,10 @@ int main(void){
             	if(no==0){
                 printf("=>취소됨!");
                 continue;}
-            }
+            
 	    getchar();
             updateProduct(&slist[no-1],ccount);
-        }
+        }}
         else if (menu == 4) {
 		if(count==0){printf("데이터가 없습니다.\n");continue;}
 		else{
