@@ -38,7 +38,7 @@ int createProduct(Product *p,int ccount){
 	scanf("%d", &p->star);
 	printf("제품의 personal color는? :(0: 공통 1: 봄웜 2: 여름쿨 3: 가을웜 4: 겨울쿨) ");
 	scanf("%d",&p->pcolor);
-	printf("\n");
+	printf("----색상표----\n");
 	for (int i=0 ;i<ccount;i++){
         printf("%3d %s\n",i+1,p[i].fcolor);
    	}
