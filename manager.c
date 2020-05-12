@@ -51,7 +51,9 @@ void saveData(Product *p, int count){
 }
 
 void eventProduct(Product *p,int count){
-
+	printf("_____현재 event중인 상품은\n_____");
+	printf("No Name     Weight Price Point PersonalColor ProductColor event1/2\n");
+	printf("=================================\n");
 	for (int i=0;i<count;i++){
 		if(p[i].event==1){
 			printf("%2d ",i+1);
