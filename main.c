@@ -27,18 +27,24 @@ int main(void){
 		 listProduct(slist,curcount);
 } 
         else if (menu == 2) {
-            count+=createProduct(&slist[curcount++],ccount); 
+		if(count==0){printf("데이터가 없습니다.\n");continue;}
+		else
+        	 count+=createProduct(&slist[curcount++],ccount); 
         }
         else if (menu == 3) {
-            int no=selectDataNo(slist, curcount);
-            if(no==0){
+           	if(count==0){printf("데이터가 없습니다.\n");continue;}
+		else{
+		int no=selectDataNo(slist, curcount);
+            	if(no==0){
                 printf("=>취소됨!");
-                continue;
+                continue;}
             }
 	    getchar();
             updateProduct(&slist[no-1],ccount);
         }
         else if (menu == 4) {
+		if(count==0){printf("데이터가 없습니다.\n");continue;}
+		else{
             int no=selectDataNo(slist, curcount);
             if(no==0){
                 printf("=>취소됨!");
@@ -50,7 +56,7 @@ int main(void){
             if(deleteok == 1){
                 if(deleteProduct(&slist[no-1])) count --;       
            	 } 
-        }
+        }}
 	    else if (menu == 5){
 		    if (count==0) printf("데이터가 없습니다!\n");
 		    else saveData(slist,curcount);
