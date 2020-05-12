@@ -26,7 +26,7 @@ int updateProduct(Product *p,int ccount){
 	return 1;
 
 } 
-int createProduct(Product *p,int ccount){
+int createProduct(Product *p,int ccount,Product *k){
 	int n;
 	printf("제품의 이름은? ");
 	scanf("%[^\n]s",p->name);
@@ -40,7 +40,7 @@ int createProduct(Product *p,int ccount){
 	scanf("%d",&p->pcolor);
 	printf("----색상표----\n");
 	for (int i=0 ;i<ccount;i++){
-        printf("%3d %s\n",i+1,p[i].fcolor);
+        printf("%3d %s\n",i+1,k[i].fcolor);
    	}
 	printf("제품의 색상은? ");
    	scanf("%d",&n);
