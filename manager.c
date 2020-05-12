@@ -19,8 +19,8 @@ int selectMenu(){
 }
 
 void listProduct(Product *p,int count){
-	printf("\nNo Name     Weight Price Point PersonalColor ProductColor event1/2\n"); 
-	printf("=================================\n"); 
+	printf("\nNo Name    Weight Price Point PersonalColor ProductColor event1/2\n"); 
+	printf("======================================\n"); 
 	//제품이름 제품무게 제품가격 제품별점 personalcolor 제품색상 이벤트유무
 	for(int i = 0; i < count; i++){ 
 		if(p[i].weight == -1) continue;
@@ -51,12 +51,12 @@ void saveData(Product *p, int count){
 }
 
 void eventProduct(Product *p,int count){
-	printf("_____현재 event중인 상품은\n_____");
+	printf("_____현재 event중인 상품은_____\n");
 	printf("No Name     Weight Price Point PersonalColor ProductColor event1/2\n");
-	printf("=================================\n");
+	printf("====================================\n");
 	for (int i=0;i<count;i++){
 		if(p[i].event==1){
-			printf("%2d ",i+1);
+			printf("%3d ",i+1);
 			readProduct(p[i]);		
 
 		}
