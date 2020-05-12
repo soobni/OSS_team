@@ -51,14 +51,26 @@ int main(void){
                 if(deleteProduct(&slist[no-1])) count --;       
            	 } 
         }
-	    else if (menu == 5){
-		    if (count==0) printf("데이터가 없습니다!\n");
-		    else saveData(slist,curcount);
+	   else if (menu == 5){
+		if (count==0) printf("데이터가 없습니다!\n");
+		else saveData(slist,curcount);
 	    }
 	   else if (menu == 6){
 		if(count ==0) printf("데이터가 없습니다!\n"); 
 		else searchName(slist, curcount); 
 		}
+	   else if (menu == 7) {
+		if(count == 0) printf("데이터가 없습니다!\n");
+		else eventProduct(slist, curcount);
+		}
+	  else if (menu == 8) {
+		if(count == 0) printf("데이터가 없습니다!\n");
+		else searchColor(slist, curcount);
+		}
+	  else if (menu == 9) {
+		if(count == 0) printf("데이터가 없습니다!\n");
+		else PersonalColor(slist, curcount);
+		} 
 	}
 	
 	printf("\n종료됨!\n");
