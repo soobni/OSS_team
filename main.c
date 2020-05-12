@@ -34,7 +34,7 @@ int main(void){
                 continue;}
             
 	    getchar();
-            updateProduct(&slist[no-1],ccount);
+            updateProduct(&slist[no-1],ccount,slist);
         }}
         else if (menu == 4) {
 		if(count==0){printf("데이터가 없습니다.\n");continue;}
