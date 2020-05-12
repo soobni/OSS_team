@@ -1,6 +1,6 @@
 #include "product.h"
 
-int updateProduct(Product *p,int ccount){
+int updateProduct(Product *p,int ccount,Product *k){
 	int n;
 	printf("제품의 이름은? ");
    	scanf("%[^\n]s",p->name);
@@ -14,7 +14,7 @@ int updateProduct(Product *p,int ccount){
 	scanf("%d",&p->pcolor);
 	printf("제품의 색상은? ");
 	for (int i=0 ;i<ccount;i++){
-        printf("%2d %s",i+1,p[i].fcolor);
+        printf("%2d %s",i+1,k[i].fcolor);
     	}
     	scanf("%d",&n);
     	p->color = n;
