@@ -21,9 +21,11 @@ int main(void){
 } 
         else if (menu == 2) {
 		if(count==0){printf("데이터가 없습니다.\n");continue;}
-		else
-        	 count+=createProduct(&slist[curcount++],ccount); 
-        }
+		else{
+        	 count+=createProduct(slist,ccount);
+		 curcount++; 
+       		}
+	}
         else if (menu == 3) {
            	if(count==0){printf("데이터가 없습니다.\n");continue;}
 		else{
