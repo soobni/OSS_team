@@ -187,7 +187,7 @@ void searchName(Product *p, int count){
 	int scount = 0; 
 	char search[20];
 	
-	printf("검색할 이름은?\n"); 
+	printf("검색할 이름은? "); 
 	scanf("%s", search); 
 	printf("\nNo Name     Weight Price point PersonalColor ProductColor event1/2\n"); 
 	printf("=================================\n"); 
