@@ -9,6 +9,9 @@ int selectMenu(){
 	printf("4. 삭제\n"); 
 	printf("5. 파일저장\n"); 
 	printf("6. 이름검색\n"); 
+	printf("7. 이벤트 제품 조회 \n");
+	printf("8. Color로 제품 찾기 \n");
+	printf("9. Personal Color로 제품 찾기\n");
 	printf("0. 종료\n\n"); 
 	printf("=> 원하는 메뉴는? "); 
 	scanf("%d", &menu); 
@@ -51,9 +54,109 @@ void eventProduct(Product *p,int count){
 
 	for (int i=0;i<count;i++){
 		if(p[i].event==1){
-			printf("%2d",i+1);
+			printf("%2d ",i+1);
 			readProduct(p[i]);		
 
+		}
+		else continue;
+	}
+}
+
+void PersonalColor(Product *p, int count){
+	for (int i=0;i<count;i++){
+		if(p[i].pcolor==0){
+			printf("%2d 아무 색이나 잘 어울린다면?\n",i+1);
+			readProduct(p[i]);
+		}	
+		if(p[i].pcolor==1){
+			printf("%2d 나의 Personal Color가  봄웜이라면?\n",i+1);
+			readProduct(p[i]);
+		}	
+		if(p[i].pcolor==2){
+			printf("%2d 나의 Personal Color가  여름쿨이라면?\n",i+1);
+			readProduct(p[i]);
+		}	
+		if(p[i].pcolor==3){
+			printf("%2d 나의 Personal Color가  가을웜이라면?\n",i+1);
+			readProduct(p[i]);
+		}	
+		if(p[i].pcolor==4){
+			printf("%2d 나의 Personal Color가  겨울쿨이라면?\n",i+1);
+			readProduct(p[i]);
+		}	
+			
+	}	
+}
+
+void searchColor(Product *p,int count){
+	for (int i = 0; i < count; i++){
+		if(p[i].color == 1) {
+			printf("%2d ivory:\n ", i+1);
+			readProduct(p[i]);
+		} 
+		else if (p[i].color == 2) {
+			printf("%2d coralPink:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 3) {
+			printf("%2d warmPastelPink:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 4) {
+			printf("%2d peach:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 5) {
+			printf("%2d pastelAqua:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 6) {
+			printf("%2d lavender:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 7) {
+			printf("%2d burgundy:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 8) {
+			printf("%2d skyblue:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 9) {
+			printf("%2d orange:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 10) {
+			printf("%2d gold:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 11) {
+			printf("%2d warmBeige:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 12) {
+			printf("%2d limeGreen:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 13) {
+			printf("%2d navyBlue:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 14) {
+			printf("%2d lemonYellow:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 15) {
+			printf("%2d icyViolet:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 16) {
+			printf("%2d black:\n ", i+1);
+			readProduct(p[i]);
+		}
+		else if (p[i].color == 17) {
+			printf("%2d charcoalGray:\n ", i+1);
+			readProduct(p[i]);
 		}
 		else continue;
 	}
@@ -86,7 +189,7 @@ void searchName(Product *p, int count){
 	
 	printf("검색할 이름은?\n"); 
 	scanf("%s", search); 
-	printf("\nNo Name Weight Price point PersonalColor ProductColor event1/2\n"); 
+	printf("\nNo Name     Weight Price point PersonalColor ProductColor event1/2\n"); 
 	printf("=================================\n"); 
 	
 	for(int i = 0; i < count; i++){ 
@@ -110,9 +213,7 @@ int selectColor(Product *p,int colorNo){
 	return color-1;
 }
 
-
-
-int loadColor(Product*p){
+int loadColor(Product *p){
 	int n=0;
 	FILE * fp ;
 	fp = fopen ("color.txt","rt");
