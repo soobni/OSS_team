@@ -67,7 +67,7 @@ void eventProduct(Product *p,int count){
 void PersonalColor(Product *p, int count){
 	int p_color=0;
 	int j=0;
-	printf("찾고 싶은 제품의 personal color는? :(0: 공통 1: 봄웜 2: 여름쿨 3: 가을웜 4: 겨울쿨) ");
+	printf("찾고 싶은 제품의 personal color는? (0: 공통 1: 봄웜 2: 여름쿨 3: 가을웜 4: 겨울쿨) : ");
 	scanf("%d",&p_color);
 
 	printf("No Name     Weight Price Point PersonalColor ProductColor event1/2\n");
