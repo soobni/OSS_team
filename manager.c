@@ -93,14 +93,18 @@ void PersonalColor(Product *p, int count){
 void searchColor(Product *p,int count){
 	int color;
 	int ccount;
+	int j=0;
 	ccount = loadColor(p);
 	color=selectColor(p,ccount);		
 	for(int i=0;i<count;i++){
 	if(p[i].color==color){
-		printf("%3d",i+1);
+		printf("%3d ",i+1);
 		readProduct(p[i]);
+		j++;
 	}
+	
 }
+	if(j==0){printf("\n제품이 없습니다!\n");return;}
 
 }
 
