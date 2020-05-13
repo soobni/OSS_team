@@ -91,77 +91,17 @@ void PersonalColor(Product *p, int count){
 }
 
 void searchColor(Product *p,int count){
-	for (int i = 0; i < count; i++){
-		if(p[i].color == 1) {
-			printf("%3d ivory:\n ", i+1);
-			readProduct(p[i]);
-		} 
-		else if (p[i].color == 2) {
-			printf("%3d coralPink:\n ", i+1);
-			readProduct(p[i]);
-		}
-		else if (p[i].color == 3) {
-			printf("%3d warmPastelPink:\n ", i+1);
-			readProduct(p[i]);
-		}
-		else if (p[i].color == 4) {
-			printf("%3d peach:\n ", i+1);
-			readProduct(p[i]);
-		}
-		else if (p[i].color == 5) {
-			printf("%3d pastelAqua:\n ", i+1);
-			readProduct(p[i]);
-		}
-		else if (p[i].color == 6) {
-			printf("%3d lavender:\n ", i+1);
-			readProduct(p[i]);
-		}
-		else if (p[i].color == 7) {
-			printf("%3d burgundy:\n ", i+1);
-			readProduct(p[i]);
-		}
-		else if (p[i].color == 8) {
-			printf("%3d skyblue:\n ", i+1);
-			readProduct(p[i]);
-		}
-		else if (p[i].color == 9) {
-			printf("%3d orange:\n ", i+1);
-			readProduct(p[i]);
-		}
-		else if (p[i].color == 10) {
-			printf("%3d gold:\n ", i+1);
-			readProduct(p[i]);
-		}
-		else if (p[i].color == 11) {
-			printf("%3d warmBeige:\n ", i+1);
-			readProduct(p[i]);
-		}
-		else if (p[i].color == 12) {
-			printf("%3d limeGreen:\n ", i+1);
-			readProduct(p[i]);
-		}
-		else if (p[i].color == 13) {
-			printf("%3d navyBlue:\n ", i+1);
-			readProduct(p[i]);
-		}
-		else if (p[i].color == 14) {
-			printf("%3d lemonYellow:\n ", i+1);
-			readProduct(p[i]);
-		}
-		else if (p[i].color == 15) {
-			printf("%3d icyViolet:\n ", i+1);
-			readProduct(p[i]);
-		}
-		else if (p[i].color == 16) {
-			printf("%3d black:\n ", i+1);
-			readProduct(p[i]);
-		}
-		else if (p[i].color == 17) {
-			printf("%3d charcoalGray:\n ", i+1);
-			readProduct(p[i]);
-		}
-		else continue;
+	int color;
+	int ccount;
+	ccount = loadColor(p);
+	color=selectColor(p,ccount);		
+	for(int i=0;i<count;i++){
+	if(p[i].color==color){
+		printf("%3d",i+1);
+		readProduct(p[i]);
 	}
+}
+
 }
 
 int loadData(Product *p){
