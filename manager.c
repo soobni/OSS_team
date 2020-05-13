@@ -65,29 +65,22 @@ void eventProduct(Product *p,int count){
 }
 
 void PersonalColor(Product *p, int count){
-	for (int i=0;i<count;i++){
-		if(p[i].pcolor==0){
-			printf("%2d 아무 색이나 잘 어울린다면?\n",i+1);
+	int p_color=0;
+	int j=0;
+	printf("찾고 싶은 제품의 personal color는? :(0: 공통 1: 봄웜 2: 여름쿨 3: 가을웜 4: 겨울쿨) ");
+	scanf("%d",&p_color);
+
+	printf("No Name     Weight Price Point PersonalColor ProductColor event1/2\n");
+        printf("====================================\n");
+	for(int i=0;i<count;i++){
+		if(p[i].pcolor==p_color){
 			readProduct(p[i]);
-		}	
-		if(p[i].pcolor==1){
-			printf("%2d 나의 Personal Color가  봄웜이라면?\n",i+1);
-			readProduct(p[i]);
-		}	
-		if(p[i].pcolor==2){
-			printf("%2d 나의 Personal Color가  여름쿨이라면?\n",i+1);
-			readProduct(p[i]);
-		}	
-		if(p[i].pcolor==3){
-			printf("%2d 나의 Personal Color가  가을웜이라면?\n",i+1);
-			readProduct(p[i]);
-		}	
-		if(p[i].pcolor==4){
-			printf("%2d 나의 Personal Color가  겨울쿨이라면?\n",i+1);
-			readProduct(p[i]);
-		}	
-			
-	}	
+			j++;
+		}
+		
+	}
+
+	if(j==0){ printf("\n=>해당하는 제품이 없습니다.\n");return;}
 }
 
 void searchColor(Product *p,int count){
@@ -96,6 +89,9 @@ void searchColor(Product *p,int count){
 	int j=0;
 	ccount = loadColor(p);
 	color=selectColor(p,ccount);		
+
+	printf("No Name     Weight Price Point PersonalColor ProductColor event1/2\n");
+        printf("====================================\n");
 	for(int i=0;i<count;i++){
 	if(p[i].color==color){
 		printf("%3d ",i+1);
@@ -104,7 +100,7 @@ void searchColor(Product *p,int count){
 	}
 	
 }
-	if(j==0){printf("\n제품이 없습니다!\n");return;}
+	if(j==0){printf("\n=>제품이 없습니다!\n");return;}
 
 }
 
