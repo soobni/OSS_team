@@ -12,10 +12,15 @@ int updateProduct(Product *p,int ccount,Product *k){
 	scanf("%d", &p->star);
 	printf("제품의 personal color는? :(0: 공통 1: 봄웜 2: 여름쿨 3: 가을웜 4: 겨울쿨) ");
 	scanf("%d",&p->pcolor);
-	printf("____색상표____\n");
-	printf("제품의 색상은? ");
-	n = selectColor(k,ccount);
-    	p->color = n;
+
+	printf("----색상표----\n");
+        for (int i=0 ;i<ccount;i++){
+        printf("%3d %s\n",i+1,k[i].fcolor);
+        }
+        printf("제품의 색상은? ");
+        scanf("%d",&n);
+        p->color = n;
+
 	printf("이벤트 유무? Y:1 N:2 ");
 	scanf("%d",&p->event);
     	
@@ -36,13 +41,17 @@ int createProduct(Product *p,int ccount,Product *k){
 	scanf("%d", &p->star);
 	printf("제품의 personal color는? :(0: 공통 1: 봄웜 2: 여름쿨 3: 가을웜 4: 겨울쿨) ");
 	scanf("%d",&p->pcolor);
-	printf("제품의 색상은? ");
 	printf("----색상표----\n");
-	n = selectColor(k,ccount);
+	for (int i=0 ;i<ccount;i++){
+        printf("%3d %s\n",i+1,k[i].fcolor);
+   	}
+	printf("제품의 색상은? ");
+	scanf("%d",&n);
     	p->color = n;
 	printf("이벤트 유무? Y:1 N:2 ");
 	scanf("%d",&p->event);
-
+	
+	printf("=>추가됨!\n");
 
 	return 1;
 }
