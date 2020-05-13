@@ -148,11 +148,11 @@ void searchName(Product *p, int count){
 int selectColor(Product *p,int colorNo){
 	int color;
 	for(int i=0;i<colorNo;i++){
-	printf("%2d %s",i+1,p[i].fcolor);
+	printf("%2d %s\n",i+1,p[i].fcolor);
 	}	
 	printf("번호는? ");
     	scanf("%d",&color);
-	return color-1;
+	return color;
 }
 
 int loadColor(Product *p){
@@ -169,7 +169,6 @@ int loadColor(Product *p){
 
 }
 	fclose(fp);
-	printf("=> 색 로딩 성공!\n");
 	return n;
 }
 
