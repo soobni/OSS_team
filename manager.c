@@ -106,7 +106,7 @@ void searchColor(Product *p,int count){
 
 int loadData(Product *p){
 	int n=0;
-   	FILE * fp;
+   	FILE *fp;
    	fp = fopen("product.txt","rt");
     	if(fp == NULL){
         printf("=> 파일 없음\n");
@@ -117,13 +117,14 @@ int loadData(Product *p){
        		 fscanf(fp,"%d %d %d %d %d %d %s\n",&p[n].weight, &p[n].price, &p[n].star, &p[n].pcolor, &p[n].color,&p[n].event, p[n].name);
 	n++;
     }
-
-    
-    printf("=> 로딩 성공!\n");
-    return n;
-}
+   // printf("=> 로딩 성공!\n");
+   // return n;
+}	
 fclose(fp);
+printf("=>로딩성공\n");
+return n;
 }
+
 
 void searchName(Product *p, int count){
 	int scount = 0; 

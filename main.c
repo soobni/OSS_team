@@ -9,7 +9,7 @@ int main(void){
     count = loadData(slist);
     curcount = count; 
     ccount = loadColor(slist);
-
+	
     while (1){
         menu = selectMenu();
         getchar();
