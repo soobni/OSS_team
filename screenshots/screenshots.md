@@ -53,8 +53,12 @@
 ## 4. 삭제
    * 1번인 아이쉐도우를 삭제해 보겠습니다.
    ![image]("https://user-images.githubusercontent.com/61505435/81924575-41793500-961a-11ea-98c3-82e9cca153f9.png")
-   
    ### 삭제 후 조회
+![image]("<img width="488" alt="스크린샷 2020-05-14 오후 7 43 17" src="https://user-images.githubusercontent.com/61505435/81925211-2a871280-961b-11ea-9276-42c32be5a208.png">")
+   * 1번을 제외한 2번 3번이 나오는 것을 볼 수 있습니다.
+
+## 5. 파일저장
+   * 이제 이 내용을 파일에 저장해 보겠습니다.
    
 
    
