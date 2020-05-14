@@ -20,10 +20,7 @@ int main(void){
 		 listProduct(slist,curcount);
 		} 
         else if (menu == 2) {
-	//	if(count==0){printf("데이터가 없습니다.\n");continue;}
-	//	else{
         	 count+=createProduct(&slist[curcount++],ccount,slist);
-       	//	}
 	}
         else if (menu == 3) {
            	if(count==0){printf("데이터가 없습니다.\n");continue;}
