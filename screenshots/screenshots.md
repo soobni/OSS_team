@@ -54,7 +54,7 @@
    * 1번인 아이쉐도우를 삭제해 보겠습니다.
 <img width="503" alt="스크린샷 2020-05-14 오후 7 36 13" src="https://user-images.githubusercontent.com/61505435/81925711-d4ff3580-961b-11ea-85ac-ec959c32caba.png">
   
-    ### 삭제 후 조회
+  ### 삭제 후 조회
 <img width="488" alt="스크린샷 2020-05-14 오후 7 43 17" src="https://user-images.githubusercontent.com/61505435/81925211-2a871280-961b-11ea-9276-42c32be5a208.png">
 
    * 1번을 제외한 2번 3번이 나오는 것을 볼 수 있습니다.
@@ -72,5 +72,9 @@
 
 
    ## 6. 이름검색
+   * 카라를 찾아보겠습니다. 
+<img width="563" alt="스크린샷 2020-05-14 오후 8 00 28" src="https://user-images.githubusercontent.com/61505435/81926831-8fdc0300-961d-11ea-9807-3b6eb4608b56.png">
+
+  * 2번인 더 쇼킹 카라가 나오는 것을 알 수 있습니다.
 
 
