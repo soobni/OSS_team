@@ -7,7 +7,7 @@
 
 먼저, 기초적인 기능들에 대해서 설명해드리겠습니다. 
 
-* 0. MainMenu
+## 0. MainMenu
 ![image](https://user-images.githubusercontent.com/61863242/81915072-11776500-960d-11ea-9799-df8e4fe28bc2.png)
   맨 먼저 프로젝트를 실행하면 다음과 같이 메인 메뉴가 생성됩니다. 
   
