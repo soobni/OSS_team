@@ -86,4 +86,13 @@
 <img width="496" alt="스크린샷 2020-05-14 오후 8 10 22" src="https://user-images.githubusercontent.com/61505435/81927639-f281ce80-961e-11ea-879f-72de999240b1.png">
 
 
+  ## 8. Color로 제품찾기
+
+   * 이제 제품의 색으로 제품을 찾아보겠습니다.
+   * 저는 beige색을 원하므로 beige색을 찾아보겠습니다.
+
+<img width="540" alt="스크린샷 2020-05-14 오후 8 13 26" src="https://user-images.githubusercontent.com/61505435/81927895-602dfa80-961f-11ea-9d08-61e8076c1a75.png">
+   * 이렇게 해당 제품이 나오는 것을 볼 수 있습니다.
+
+
 
