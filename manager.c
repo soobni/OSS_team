@@ -25,7 +25,7 @@ void listProduct(Product *p,int count){
 	for(int i = 0; i < count; i++){ 
 		if(p[i].weight == -1) continue;
 		printf("%2d ", i+1); 
-		readProduct(p[i]); 
+		readProduct(p[i],p); 
 	}
 	 printf("\n"); 
 }
@@ -57,7 +57,7 @@ void eventProduct(Product *p,int count){
 	for (int i=0;i<count;i++){
 		if(p[i].event==1){
 			printf("%3d ",i+1);
-			readProduct(p[i]);		
+			readProduct(p[i],p);		
 
 		}
 		else continue;
@@ -74,7 +74,8 @@ void PersonalColor(Product *p, int count){
         printf("====================================\n");
 	for(int i=0;i<count;i++){
 		if(p[i].pcolor==p_color){
-			readProduct(p[i]);
+			printf("%3d",i+1);
+			readProduct(p[i],p);
 			j++;
 		}
 		
@@ -95,7 +96,7 @@ void searchColor(Product *p,int count){
 	for(int i=0;i<count;i++){
 	if(p[i].color==color){
 		printf("%3d ",i+1);
-		readProduct(p[i]);
+		readProduct(p[i],p);
 		j++;
 	}
 	
@@ -137,7 +138,7 @@ void searchName(Product *p, int count){
 		if(p[i].weight == -1) continue; 
 		if(strstr(p[i].name, search)){ 
 			printf("%2d ", i+1); 
-			readProduct(p[i]); scount++; 
+			readProduct(p[i],p); scount++; 
 		} 
 	} 
 	if(scount == 0) printf("=> 검색된 데이터 없음!");
