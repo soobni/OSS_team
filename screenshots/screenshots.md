@@ -17,12 +17,38 @@
   * 아직 등록된 화장품이 없어서 조회가 되지 않는 모습입니다. 
   
 ## 2. 추가
+
   * 화장품을 추가하는 기능입니다. 
   * 원하는 화장품을 추가해보도록 하겠습니다. 
+  
   ![image](https://user-images.githubusercontent.com/61863242/81917470-302b2b00-9610-11ea-9883-ed73b7ee50b3.png)
   ![image](https://user-images.githubusercontent.com/61863242/81917616-62d52380-9610-11ea-907d-3828c282cdcc.png)
+  
   * 제품의 이름, 무게, 가격, 별점은 물론 Personal Color와 제품의 색상, 그리고 이벤트 유무까지 저장할 수 있습니다. 
   * Personal Color는 보시는 바와 같이 5가지 중에서 고를 수 있으며, 제품의 색상은 가장 대표적인 18가지 색상으로 구현했습니다. 
+  * 이벤트 유무에서 1번을 선택하면 이벤트 하는 제품으로 등록이 됩니다. 
+  
+  ### 조회
+  ![image](https://user-images.githubusercontent.com/61863242/81917913-c4958d80-9610-11ea-82b5-901b3848dd3f.png)
+  * 다시 한 번 조회를 했을 때의 모습입니다. 
+  * 저장한 제품의 목록을 보여줍니다. 
+  
+  ### 추가 후 조회
+  ![image](https://user-images.githubusercontent.com/61863242/81918678-c449c200-9611-11ea-9e8b-556d7659833c.png)
+
+  * 몇가지 제품들을 더 추가한 후 조회한 모습입니다. 
+  * 앗, 오타가 생겼습니다. 
   
  
-## 3. 
+## 3. 수정
+   * 오타를 수정해보겠습니다. 
+   ![image](https://user-images.githubusercontent.com/61863242/81918874-0a9f2100-9612-11ea-90c4-8ec15f0340e9.png)
+   ![image](https://user-images.githubusercontent.com/61863242/81919009-38846580-9612-11ea-91c9-4d63b45e8927.png)
+   
+   ### 조회  
+![image](https://user-images.githubusercontent.com/61863242/81919122-61a4f600-9612-11ea-9970-d713da70f483.png)
+
+   * 깔끔하게 수정된 것을 볼 수 있습니다. 
+
+   
+
