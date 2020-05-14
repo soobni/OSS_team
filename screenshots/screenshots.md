@@ -45,6 +45,10 @@
    ![image](https://user-images.githubusercontent.com/61863242/81918874-0a9f2100-9612-11ea-90c4-8ec15f0340e9.png)
    ![image](https://user-images.githubusercontent.com/61863242/81919009-38846580-9612-11ea-91c9-4d63b45e8927.png)
    
-   ### 조회
+   ### 조회  
+![image](https://user-images.githubusercontent.com/61863242/81919122-61a4f600-9612-11ea-9970-d713da70f483.png)
+
+   * 깔끔하게 수정된 것을 볼 수 있습니다. 
+
    
 
