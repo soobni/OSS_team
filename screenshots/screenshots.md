@@ -42,3 +42,9 @@
  
 ## 3. 수정
    * 오타를 수정해보겠습니다. 
+   ![image](https://user-images.githubusercontent.com/61863242/81918874-0a9f2100-9612-11ea-90c4-8ec15f0340e9.png)
+   ![image](https://user-images.githubusercontent.com/61863242/81919009-38846580-9612-11ea-91c9-4d63b45e8927.png)
+   
+   ### 조회
+   
+
