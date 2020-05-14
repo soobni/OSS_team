@@ -56,9 +56,9 @@ int createProduct(Product *p,int ccount,Product *k){
 	return 1;
 }
 
-void readProduct(Product p){
+void readProduct(Product p,Product*k){
 	//제품이름 제품무게 제품가격 제품별점 personalcolor 제품색상 이벤트유무
-	printf("%s %dg %dWon %d %d %d %d\n", p.name, p.weight, p.price, p.star, p.pcolor, p.color, p.event);
+	printf("%s %dg %dWon %d %d %s %d\n", p.name, p.weight, p.price, p.star, p.pcolor,k[p.color-1].fcolor, p.event);
 	 //제품의 색상을 숫자라고 해놓음
 }
 
