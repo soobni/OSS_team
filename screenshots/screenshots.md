@@ -16,8 +16,11 @@
 ![image](https://user-images.githubusercontent.com/61863242/81917187-d4f93880-960f-11ea-85bb-6f99fa34baae.png)
   * 아직 등록된 화장품이 없어서 조회가 되지 않는 모습입니다. 
   
-##2. 추가
-  화장품을 추가하는 기능입니다. 
-  원하는 화장품을 추가해보도록 하겠습니다. 
-
-2. 
+## 2. 추가
+  * 화장품을 추가하는 기능입니다. 
+  * 원하는 화장품을 추가해보도록 하겠습니다. 
+  ![image](https://user-images.githubusercontent.com/61863242/81917470-302b2b00-9610-11ea-9883-ed73b7ee50b3.png)
+  
+  
+ 
+## 3. 
