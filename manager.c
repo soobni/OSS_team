@@ -115,7 +115,7 @@ int loadData(Product *p){
     }
 	else{
  	   while(!feof(fp)){
-       		 fscanf(fp,"%d %d %d %d %d %d %s\n",&p[n].weight, &p[n].price, &p[n].star, &p[n].pcolor, &p[n].color,&p[n].event, p[n].name);
+       		 fscanf(fp,"%d %d %d %d %d %d %[^\n]s",&p[n].weight, &p[n].price, &p[n].star, &p[n].pcolor, &p[n].color,&p[n].event, p[n].name);
 	n++;
     }
     printf("=> 로딩 성공!\n");
