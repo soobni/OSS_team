@@ -20,7 +20,9 @@
   * 화장품을 추가하는 기능입니다. 
   * 원하는 화장품을 추가해보도록 하겠습니다. 
   ![image](https://user-images.githubusercontent.com/61863242/81917470-302b2b00-9610-11ea-9883-ed73b7ee50b3.png)
-  
+  ![image](https://user-images.githubusercontent.com/61863242/81917616-62d52380-9610-11ea-907d-3828c282cdcc.png)
+  * 제품의 이름, 무게, 가격, 별점은 물론 Personal Color와 제품의 색상, 그리고 이벤트 유무까지 저장할 수 있습니다. 
+  * Personal Color는 보시는 바와 같이 5가지 중에서 고를 수 있으며, 제품의 색상은 가장 대표적인 18가지 색상으로 구현했습니다. 
   
  
 ## 3. 
