@@ -74,6 +74,7 @@ void PersonalColor(Product *p, int count){
         printf("====================================\n");
 	for(int i=0;i<count;i++){
 		if(p[i].pcolor==p_color){
+			printf("%3d",i+1);
 			readProduct(p[i],p);
 			j++;
 		}
